@@ -4,13 +4,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import Homepage from './Components/Homepage/Homepage'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Homepage/>
+    <Routes>
+      <Route path='/' element={<Homepage/>}/>
+    </Routes>
     </>
   )
 }
