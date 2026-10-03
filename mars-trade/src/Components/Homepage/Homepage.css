@@ -1,0 +1,11 @@
+.home{
+     position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: clamp(16px, 5vw, 50px);
+
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+    background: red;
+}
