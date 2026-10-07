@@ -1,0 +1,149 @@
+/* Your filter buttons (the pills at the top of the Shop page) */
+.shop-pill {
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s, background 0.2s;
+}
+.shop-pill:hover { 
+  transform: translate(-2px, -2px);
+  background: #d416cb;
+  box-shadow: 4px 4px black;
+  transition: 0.4s ease;
+ }
+.shop-pill:focus-visible { outline: 3px solid rgb(0, 38, 255); outline-offset: 2px; }
+
+/* The selected filter button */
+.shop-item p.shop-pill-active { background: #e221d9; outline: 2px solid #5f1e5c; }
+.shop-item p.shop-pill-active:focus-visible { outline: 3px solid rgb(0, 38, 255); }
+
+/* The product section */
+.sp {
+  position: relative;
+  z-index: 1;
+  width: 90%;                       /* same width as your filter buttons row */
+  margin-top: clamp(20px, 4vw, 40px);
+}
+
+.sp-status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: clamp(16px, 3vw, 28px);
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  font-size: clamp(14px, 3vw, 18px);
+  color: #5f1e5c;
+}
+
+.sp-clear {
+  font: inherit;
+  font-size: 0.9em;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2px solid #9e489a;
+  background: transparent;
+  color: #9e489a;
+}
+.sp-clear:hover { 
+  background: #9e489a; 
+  color: #ffffff; 
+  box-shadow: 4px 4px black;
+}
+.sp-clear:focus-visible { outline: 3px solid rgb(0, 38, 255); outline-offset: 2px; }
+
+.sp-empty {
+  text-align: center;
+  font-size: clamp(14px, 3vw, 18px);
+}
+
+/* Cards: as many per row as fit, never narrower than about 230px */
+.sp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr));
+  gap: clamp(16px, 3vw, 28px);
+}
+
+.sp-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: clamp(16px, 3vw, 24px);
+  background: #ffffff;
+  box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.sp-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #f1e6f0;
+}
+
+.sp-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 6px;
+  padding: clamp(12px, 2.5vw, 18px);
+}
+
+.sp-cat { 
+  font-size: 13px; 
+  font-weight: 600; 
+  color: #8d0de2; }
+
+.sp-name {
+  margin: 0;
+  font-size: clamp(20px, 3.5vw, 23px);
+  overflow-wrap: anywhere;
+}
+
+.sp-price {
+  margin: 0;
+  font-size: clamp(18px, 3vw, 19px);
+  font-weight: 700;
+  color: #f00000;
+}
+
+.sp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.sp-btn {
+  flex: 1 1 110px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(14px, 3vw, 16px);
+  color: #ffffff;
+  transition: transform 0.2s;
+}
+.sp-btn:hover { 
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px black; 
+  transition: 0.4s ease;
+}
+.sp-btn:focus-visible { outline: 3px solid rgb(0, 38, 255); outline-offset: 2px; }
+
+.sp-whatsapp { background: #1ab464; }
+.sp-call { background: #d416cb; }
+
+@media (prefers-reduced-motion: reduce) {
+  .shop-pill, .sp-btn { transition: none; }
+  .shop-pill:hover, .sp-btn:hover { transform: none; }
+}

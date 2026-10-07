@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+.admin-shop{
+  position: relative;
+  overflow: clip;
+  min-height: 100vh;
+  padding: clamp(16px, 5vw, 50px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #fefbce;
+  padding-top: clamp(85px, 9vw, 150px);
+}
+
+.admin-shop-heading h1{
+    text-align: center;
+    font-size: clamp(36px, 4vw, 55px);
+    font-weight: 550;
+    color: #a52a2a;
+}
+
+.admin-shop-form{
+    width: 70%;
+    align-self: center;
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    padding: clamp(20px, 4vw, 40px);
+    border-radius: clamp(20px, 4vw, 30px);
+    margin-top: clamp(20px, 3vw, 35px);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 5vw, 55px);
+    box-shadow: 5px 5px 20px  ;
+    padding-left:clamp(5px, 6vw, 90px);
+    
+}
+
+.form-header {
+    color: #a52a2a;
+    font-size: clamp(20px, 4vw, 40px);
+    text-align: center;
+    font-weight: 600;
+}
+
+.product{
+    font-size:clamp(18px, 4vw, 22px);
+    margin-bottom: clamp(10px, 3vw, 12px);
+}
+
+.product-prefix{
+    font-size:clamp(18px, 4vw, 22px);
+    margin-right: clamp(15px, 3vw, 20px);
+}
+
+.product-field{
+    width: 80%;
+    height: 7vh;
+    border-radius: clamp(10px, 3vw, 15px);
+    border: none;
+    border-bottom: 2px solid rgb(216, 14, 14);
+    padding: clamp(10px, 3vw, 15px);
+    font-size: clamp(16px, 3vw, 18px);
+    outline: 1px solid rgb(158, 56, 56);
+    background: transparent;
+    align-self: center;
+}
+
+#product-currency {
+    width: clamp(150px, 60%, 200px);
+    height: 7vh;
+    border-radius: clamp(10px, 3vw, 15px);
+    border: none;
+    border-bottom: 2px solid rgb(216, 14, 14);
+    padding: clamp(10px, 3vw, 15px);
+    font-size: clamp(16px, 3vw, 18px);
+    outline: 1px solid rgb(158, 56, 56);
+    background: transparent;
+    align-self: center;
+}
+
+.product-field:focus-visible{
+    background-color: white;
+    outline: 1px solid rgb(0, 38, 255);
+    border: none;
+}
+
+
+
+#product-cat{
+    width: 100%;
+    color: #000000;
+    height: 7vh;
+    border-radius: clamp(7px, 3vw, 15px);
+    font-size: clamp(15px, 3vw, 19px);
+    text-align: center;
+}
+
+.product-btn{
+    background: #c600d8;
+    width: clamp(150px, 30%, 200px);
+    text-align: center;
+    font-size: clamp(16px, 3vw, 18px);
+    border-radius: clamp(25px, 3vw, 30px);
+    padding: clamp(10px, 3vw, 15px);
+    border: none;
+    outline: 1px solid #a502a5;
+    color: #ffffff;
+}
+
+.product-btn:hover{
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px black;
+    transition: 0.4s ease;
+    background: rgb(255, 0, 242);
+}
+
