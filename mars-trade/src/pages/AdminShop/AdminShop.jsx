@@ -39,6 +39,7 @@ const AdminShop = () => {
 
         <div className="product-currency">
           <p className="product">Seller's Phone Number</p>
+          
             <input type="tel" name=""  id="product-currency" placeholder='+233*********'/>
         </div>
 
@@ -60,6 +61,7 @@ const AdminShop = () => {
         <div className="product-btn">
           <p className="product-bttn" type='button'>Upload Product</p>
         </div>
+        vuiufuhvvvhvhjvjbvhh
 
       </form>
 
