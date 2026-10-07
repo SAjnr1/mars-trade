@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+.shop{
+  position: relative;
+  overflow: clip;
+  min-height: 100vh;
+  padding: clamp(16px, 5vw, 50px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #fefbce;
+  margin-top: clamp(85px, 9vw, 90px);
+}
+
+.shop-head{
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: clamp(14px, 3vw, 30px);
+}
+
+.shop-head h1{
+  color: #000000;
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
+}
+
+.shop-head span{
+  color: #a52a2a;
+}
+
+.shop-caption p{
+  text-align: center;
+  color: #8d0de2;
+  z-index: 1;
+  position: relative;
+  padding: 15px;
+  font-size: clamp(14px, 3vw, 20px);
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.shop-item{
+    gap: 20px;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    gap: clamp(25px, 5vw, 45px);
+    flex-wrap: wrap;
+    margin-top: clamp(20px, 3vw, 30px);
+}
+
+.shop-item p{
+    background: #9e489a;
+    color: #ffffff;
+    outline: 1px solid #c950c3;
+    border: none;
+    padding: clamp(10px, 3vw, 15px);
+    border-radius: clamp(25px, 4vw, 40px);
+    min-width: clamp(75px , 8vw, 100px);
+    text-align: center;
+    font-size: clamp(14px, 3vw, 20px);
+}

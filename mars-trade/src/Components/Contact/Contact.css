@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+
+.contact{
+  position: relative;
+  overflow: clip;
+  min-height: 100vh;
+  padding: clamp(16px, 5vw, 50px);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #fefbce;
+  margin-top: clamp(85px, 9vw, 90px);
+}
+
+
+.heading {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: clamp(14px, 3vw, 30px);
+  
+}
+
+.heading h1 {
+  color: #000000;
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
+}
+
+.heading h1 span{
+  color: brown;
+  font-style: normal;
+}
+
+.caption p{
+    text-align: center;
+    color: #8d0de2;
+    z-index: 1;
+    position: relative;
+    padding: 15px;
+    font-size: clamp(14px, 3vw, 20px);
+    font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.contact-card {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  /* as many columns as fit, each at least 220px wide */
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: clamp(12px, 3vw, 24px);
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  background: transparent;
+  
+}
+
+a{
+    background: none;
+}
+
+.snap {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: #f6fa01;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.gmail {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: #faa301;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.instagram {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: #8134AF;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+
+.tiktok {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: rgb(7, 7, 7);
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.whatsapp {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: #1ef56d;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.threads {
+  display: flex;
+  align-items: center;      /* centers image and name vertically */
+  gap: 16px;
+  background: rgb(7, 7, 7);
+  padding: 16px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+
+.contact-img {
+  width: clamp(44px, 10vw, 64px);
+  height: clamp(44px, 10vw, 64px);
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.name {
+  flex: 1;              /* takes all the space beside the image */
+  text-align: center;   /* centers the text horizontally in that space */
+  margin: 0;
+  font-size: clamp(1.1rem, 4vw, 1.7rem);
+  color: #ffffff;
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "GRAD" 0;
+}
+
+#snap, #gmail, #whatsapp{
+    color: black;
+}
+
+.contact-card a{
+    text-decoration: none;
+}
+
+a:hover{
+    transform: perspective(1000px) rotateX(2deg) rotateY(-1deg) translateY(-7px);
+    transition: 0.3s ease;
+}
+
+/* Small phones: single column, tighter spacing, no hover-lift (touch screens) */
+@media (max-width: 480px) {
+  .contact-card {
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
+
+  .snap, .gmail, .instagram, 
+  .tiktok, .whatsapp, .threads {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  a:hover{
+    transform: none;
+    box-shadow: none;
+  }
+
+  a:active{
+    transform: scale(0.97);
+    transition: 0.15s ease;
+  }
+}
