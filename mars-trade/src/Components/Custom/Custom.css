@@ -69,7 +69,7 @@
 
 .custom-card{
     background: #861d81;
-    width:clamp(300px, 90%, 1000px);
+    width:clamp(300px, 90%, 9000px);
     align-self:center;  
     display: flex;
     gap: 15px;
@@ -93,25 +93,29 @@
   font-size: clamp(18px, 4vw, 25px);
 }
 
-.custom-card-caption{
+.custom-card-caption p{
   color: white;
   font-size: clamp(15px, 3.5vw, 20px);
+  justify-content: left;
 }
 
 .custom-img {
-  width: clamp(80px, 15%, 90px);
+  width: 15%;
 }
 
 #one{
-  background: #ff1100;
+  background: #d336e7;
+  outline: 1px solid black;
 }
 
 #two{
-  background: #002fff;
+  background: #d336e7;
+  outline: 1px solid black;
 }
 
 #three{
-  background: #a200ff;
+  background: #d336e7;
+  outline: 1px solid black;
 }
 
 .custom-form{
@@ -152,14 +156,20 @@ label{
   font-size: clamp(15px, 4vw, 25px);
 }
 
+.ppp{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
 #pref{
   height:20vh;
-  width:clamp(200px, 90%, 600px);
+  width:90%;
   padding: 15px; 
   text-wrap: wrap;
   border-radius: clamp(10px, 3vw, 20px);
   border: 2px solid #ffa600;
-  background: #fcf700b6;
+  background: #ffffff;
   scrollbar-color: brown;
   font-size: clamp(17px, 3vw, 19px);
   
@@ -231,7 +241,7 @@ textarea {
   text-wrap: wrap;
   border-radius: clamp(10px, 3vw, 20px);
   border: 2px solid #ffa600;
-  background: #fcf700b6;
+  background: #ffffff;
   scrollbar-color: brown;
   font-size: clamp(17px, 3vw, 19px);
   margin-top: 10px;
@@ -281,7 +291,7 @@ textarea {
   text-wrap: wrap;
   border-radius: clamp(10px, 3vw, 20px);
   border: 2px solid #ffa600;
-  background: #fcf700b6;
+  background: #ffffff;
   scrollbar-color: brown;
   font-size: clamp(17px, 3vw, 19px);
   margin-top: 10px;
@@ -324,9 +334,8 @@ textarea {
 
 .custom-btttn:hover{
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px ;
-  background: #18f803;
+  box-shadow: 4px 4px black;
+  background: #0f9e02;
   transition: 0.3s ease;
-  color: #000000;
 }
 
