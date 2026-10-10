@@ -36,7 +36,7 @@ const Custom = () => {
          </div>
         </div>
 
-         <div className="custom-card" id='two'>
+       <div className="custom-card" id='two'>
           <img src={Quotation} alt="" className='custom-img'/>
          <div className="custom-card-heading">
            <h3>2. Get A Quote</h3>
@@ -47,7 +47,7 @@ const Custom = () => {
          </div>
         </div>
 
-         <div className="custom-card" id='three'>
+        <div className="custom-card" id='three'>
           <img src={Logistics} alt="" className='custom-img' />
          <div className="custom-card-heading">
            <h3>3. Receive It </h3>
@@ -75,7 +75,7 @@ const Custom = () => {
   
 
         <div className="preff">
-           <div className="preff-col">
+          <div className="preff-col">
             <div className="col">
             <label htmlFor="">Color</label>
             <textarea name="" id="col" placeholder='Red, green'/>
@@ -90,7 +90,7 @@ const Custom = () => {
               <input step="0.01" min="0" type="number" name="" id="budget" placeholder='0.00'/>
             </div>
           </div>
-          </div>
+          
 
           <div className="date">
             <label htmlFor="">Deadline</label>
@@ -98,13 +98,15 @@ const Custom = () => {
           </div>
         </div>
 
-        <div className="custom-btttn">
+       
+
+
+
+      </div>
+      
+      <div className="custom-btttn">
           <p>Send On Whatsapp</p>
         </div>
-
-
-
-
       </div>
       <Footer/>
 

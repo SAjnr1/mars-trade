@@ -1,7 +1,7 @@
 nav{
     width: 100%;
     background: #cba2c9;
-    color: #fefbce;
+    color: #FAF7F2;
     padding: 4px 0;
     position: fixed;
     top: 0;
@@ -26,7 +26,7 @@ nav{
 
 .logout-btn{
     width: clamp(50px, 9vw, 250px);
-    background: #fefbce;
+    background: #FAF7F2;
     color: #cba2c9;
     border-radius: clamp(15px, 4vw, 30px);
 }
@@ -58,7 +58,7 @@ nav ul li a{
 }
 
 nav ul li a.active{
-    border-bottom: 2px solid #fefbce;
+    border-bottom: 2px solid #FAF7F2;
 }
 
 .dark-nav{
@@ -173,7 +173,7 @@ nav ul li a.active{
     }
 
     .bottom-nav li a.active{
-        color: #fefbce; /* solid white when active 
+        color: #FAF7F2; /* solid white when active 
         background-color: #ffffff;*/
 
     }

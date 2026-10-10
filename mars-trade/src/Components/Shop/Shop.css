@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  background: #fefbce;
+  background: #FAF7F2;
   margin-top: clamp(85px, 9vw, 90px);
 }
 
@@ -60,11 +60,14 @@
 .shop-item p{
     background: #9e489a;
     color: #ffffff;
-    outline: 1px solid #c950c3;
     border: none;
     padding: clamp(10px, 3vw, 15px);
     border-radius: clamp(25px, 4vw, 40px);
     min-width: clamp(75px , 8vw, 100px);
     text-align: center;
     font-size: clamp(14px, 3vw, 20px);
+}
+
+.shop-item p:hover{
+  background: #9e489a;
 }
