@@ -75,11 +75,13 @@ const Custom = () => {
   
 
         <div className="preff">
-          <div className="preff-col">
+           <div className="preff-col">
             <div className="col">
             <label htmlFor="">Color</label>
             <textarea name="" id="col" placeholder='Red, green'/>
           </div>
+
+          
 
           <div className="budget">
             <label htmlFor="">Budget</label>

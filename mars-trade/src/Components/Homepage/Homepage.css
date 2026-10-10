@@ -80,6 +80,8 @@
     
 }
 
+
+
 .card-set{
     display: flex;
     justify-content: center;
@@ -92,7 +94,7 @@
 
 .card{
     background: #861d81;
-    width:clamp(300px, 70%, 900px);
+    width:70%;
     align-self:center;  
     display: flex;
     gap: 20px;
@@ -100,7 +102,7 @@
     justify-content: flex-end;
     position: sticky;
     top: 5rem;                 /* where the card sticks, below the menu bar */
-   height: 62vh;
+   min-height: 32vh;
    border-radius: 20px;
    padding: 2rem;
    /*padding-top: 2rem;*/
@@ -113,8 +115,7 @@
 
 
 .card-image{
-    width: clamp(80px, 15%, 130px);
-    
+    width: 25%; 
 }
 
 
@@ -160,10 +161,10 @@
 }
 
 .card-body p:hover{
-    background: #f700ff;
-    border: 1px solid #ff00f2;
+    background: #cba2c9;
+    border: 1px solid #5f1e5c;
     transition: 0.3s ease-in-out;
-    color: white;
+    color: black;
     transform: translate(-2px, -2px);
   box-shadow: 5px 7px 0 0 #000;
 }
@@ -181,23 +182,28 @@
 
 
 #gallery{
-    background: #ff1a1a;
+    background: #d336e7;
+    outline: 1px solid black;
 }
 
 #custom{
-    background: #ffa600;
+    background: #d336e7;
+    outline: 1px solid black;
 }
 
 #shop{
-    background: #008cff;
+    background: #d336e7;
+    outline: 1px solid black;
 }
 
 #info{
-    background: #00ff0d;
+    background: #d336e7;
+    outline: 1px solid black;
 }
 
 #contact{
-    background: #8c00ff;
+    background: #d336e7;
+    outline: 1px solid black;
 }
 
 .collection{
