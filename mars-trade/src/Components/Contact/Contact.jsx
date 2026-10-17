@@ -28,14 +28,14 @@ const Contact = () => {
 
       <div className="contact-card">
 
-        <a href="https://wa.me/+233244244332" target="_blank" rel="noopener noreferrer" >
+        <a href="https://wa.me/+233203087067" target="_blank" rel="noopener noreferrer" >
         <div className="whatsapp" title='WhatsApp Profile Link'  data-aos="fade-up">
           <img src={WhatsApp} className='contact-img'/>
           <p className='name' id='whatsapp'>WhatsApp</p>
         </div>
         </a>
 
-        <a href="mailto:solomonagbeko123@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:mayarocklynn@gmail.com" target="_blank" rel="noopener noreferrer">
         <div className="gmail" title='Gmail Profile Link' data-aos="fade-up">
           <img src={Gmail} className='contact-img'/>
           <p className='name' id='gmail'>Gmail</p>
@@ -57,7 +57,7 @@ const Contact = () => {
         </div>
         </a>
 
-        <a href="https://www.instagram.com/callme.sajnr/?hl=en" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.threads.com/@venus94846" target="_blank" rel="noopener noreferrer">
         <div className="threads" title='Threads Profile Link' data-aos="fade-up">
           <img src={Threads} className='contact-img'/>
           <p className='name' id='instagram'>Threads</p>

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 // Her WhatsApp number in international format:
 // no "+", no spaces, no dashes, no leading zero. (Ghana: 233 + the number without its 0.)
-const WHATSAPP_NUMBER = "233244244332";
+const WHATSAPP_NUMBER = "233203087067";
 
 // "2026-12-20" -> "20 Dec 2026". Empty becomes "-".
 const niceDate = (value) => {
@@ -21,7 +21,7 @@ const clean = (value) => (value || "").trim() || "-";
 export default function useWhatsAppOrder() {
   useEffect(() => {
     const form = document.querySelector(".custom-form");
-    const button = form && form.querySelector(".custom-btn");
+    const button = form && form.querySelector(".custom-btttn");
     if (!form || !button) return;
 
     const what = form.querySelector("#pref");
