@@ -99,5 +99,8 @@ button:hover{
     transition: 0.3s ease;
     transform: translate(-2px -2px);
     box-shadow: 4px 4px;
-    background: #df23d5;
+}
+
+.link:hover{
+    transform: none;
 }

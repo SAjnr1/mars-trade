@@ -18,12 +18,12 @@ const Homepage = () => {
       <Navbar/>
      <div className="hero1" >
         <div className="title1" data-aos="fade-right">
-        <h1><span>Welcome</span> back </h1>
-        <p>What would you like to do today?</p> 
+        <h1>Welcome back<span> MARS</span>  </h1>
+        <p>Your creative space to manage your creations, orders, and everything that makes MARS Stitches special.</p> 
         {/*<h1><span>Solomon's</span> Resturant, <span>Eat </span> Eat, and EAT MORE.</h1>
         <p>Your one stop shop to get a lot of food to eat </p> */}
        
-     </div>
+        </div>
      <img className='image1' src={Hero} alt=""  data-aos="fade-left" />
      </div>
 

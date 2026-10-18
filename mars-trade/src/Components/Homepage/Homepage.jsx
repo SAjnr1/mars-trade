@@ -28,7 +28,7 @@ const Homepage = () => {
      <img className='image' src={Hero} alt=""  data-aos="fade-left" />
      </div>
 
-     <div className="bttn" data-aos="fade-down">
+     <div className="bttn" data-aos="fade-up">
       
         <Link to='/shop' className="card-link">
         <div className="btn" >
@@ -90,21 +90,21 @@ const Homepage = () => {
       </div>
 
 
-      {/* <div className="card" id='info'>
+       <div className="card" id='info'>
          <img src={Info} alt="" className='card-image'/>
          <div className="card-heading">
-            <h2>A Little About Me”</h2>
+            <h2>A Little About Me</h2>
          </div>
          <div className="card-body">
             <h4>Get to know the person behind the stitches and the story behind the craft.</h4>
             <Link to='/about_me' className="card-link">
-            <p >Explore More <ArrowRight/></p>
+            <p >Learn More <ArrowRight/></p>
             </Link>
          </div>
-      </div> */}
+      </div> 
 
 
-      <div className="card" id='contact'>
+     {/* <div className="card" id='contact'>
          <img src={Contact} alt="" className='card-image'/>
          <div className="card-heading">
             <h2>Let's Talk</h2>
@@ -115,7 +115,7 @@ const Homepage = () => {
             <p >Contact Me <ArrowRight/></p>
             </Link>
          </div>
-      </div>
+      </div> */}
          
      </div>
 

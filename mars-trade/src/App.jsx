@@ -12,7 +12,7 @@ import AdminMedia from './pages/Media/AdminMedia'
 import AdminHome from './pages/Homepage/Homepage'
 import ProtectedRoute from './ProtectedRoute'
 
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, Navigate } from 'react-router-dom'
 import Contact from './Components/Contact/Contact'
 import AdminShop from './pages/AdminShop/AdminShop'
 
@@ -28,15 +28,17 @@ function App() {
       <Route path='/custom_order' element={<Custom/>}/>
       <Route path='/contact' element={<Contact/>}/>
 
+      
       <Route path='/admin/login' element={<AdminLogin/>}/>
-      <Route path='/admin/gallery' element={<AdminMedia/>}/>
-      <Route path='/admin/shop' element={<AdminShop/>}/>
-      <Route path='/admin/home' element={<AdminHome/>}/>
 
 
       <Route element={<ProtectedRoute/>}>
-        
+        <Route path="/admin" element={<Navigate to="/admin/home" replace />} />
+        <Route path='/admin/gallery' element={<AdminMedia/>}/>
+        <Route path='/admin/shop' element={<AdminShop/>}/>
+        <Route path='/admin/home' element={<AdminHome/>}/>
       </Route>
+
     </Routes>
     </>
   )

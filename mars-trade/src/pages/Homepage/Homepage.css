@@ -10,16 +10,12 @@
   padding-top: clamp(85px, 9vw, 90px);
 }
 
-.title1{
-    font-size: clamp(16px, 3vw, 35px);
-    flex-basis: 60%;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+.title1 h1 {
+    font-size: clamp(29px, 4vw, 55px);
 }
 
 .title1 p{
-    font-size: clamp(13px, 3vw, 20px);
+    font-size: clamp(17px, 3vw, 20px);
 }
 
 .hero1{
@@ -30,13 +26,13 @@
     align-content: center;
     gap: clamp(1rem, 4vw, 3.5rem);
     align-items: center;
-    margin-bottom: clamp(15px, 4vw, 20px);
 }
 
 .title1 span{
     color: #a52a2a;
 }
 
+/*
 .bttn1{
     display: flex;
     width: clamp(320px, 60%, 800px);
@@ -45,7 +41,7 @@
     gap: 10px;
 }
 
-/*.btn{
+.btn{
     font-size: clamp(10px, 3vw, 19px);
     min-width: 10%;
     display: flex;
@@ -54,7 +50,7 @@
 
 
 .image1{
-    width: 35%;
+    width: 38%;
     border-radius: clamp(10px, 3vw, 35px);
 }
 
@@ -85,31 +81,27 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    gap: 3rem;
-    margin-top: 6rem;
+    gap: 1.5rem;
+    margin-top: 4rem;
 
 }
 
 .card1{
-    background: #861d81;
-    width:clamp(300px, 70%, 900px);
+   background: #861d81;
+    width:80%;
     align-self:center;  
     display: flex;
     gap: 20px;
     flex-direction: column;
     justify-content: flex-end;
-    position: sticky;
+    /*position: sticky;*/
     top: 5rem;                 /* where the card sticks, below the menu bar */
-   height: 62vh;
+   min-height: 32vh;
    border-radius: 20px;
-   padding: 2rem;
-   /*padding-top: 2rem;*/
+   padding: 2rem;/*padding-top: 2rem;*/
 }
 
-.card1:nth-child(2){ top: 6rem; }
-.card1:nth-child(3){ top: 7rem; }
-.card1:nth-child(4){ top: 8rem; }
-.card1:nth-child(5){ top: 9rem; }
+
 
 
 .card-image1{
@@ -140,6 +132,7 @@
 .card-body1 h4{
     color: white;
     font-size:clamp(10px, 3.2vw, 20px);
+    font-weight: 400;
 }
 
 
@@ -160,10 +153,10 @@
 }
 
 .card-body1 p:hover{
-    background: #f700ff;
-    border: 1px solid #ff00f2;
+    background: #cba2c9;
+    border: 1px solid #5f1e5c;
     transition: 0.3s ease-in-out;
-    color: white;
+    color: black;
     transform: translate(-2px, -2px);
   box-shadow: 5px 7px 0 0 #000;
 }
@@ -181,24 +174,18 @@
 
 
 #gallery1{
-    background: #2dff1a;
+    background: #d336e7;
+    outline: 1px solid black
 }
 
-#custom1{
-    background: #ffa600;
-}
+
 
 #shop1{
-    background: #d400ff;
+    background: #d336e7;
+    outline: 1px solid black
 }
 
-#info1{
-    background: #00ff0d;
-}
 
-#contact1{
-    background: #8c00ff;
-}
 
 .collection1{
     margin-top: clamp(1rem, 55vh, 8rem);
@@ -231,3 +218,4 @@
     width: clamp(100px, 35%, 300px);
     border-radius: clamp(10px, 3vw, 35px);
 }
+

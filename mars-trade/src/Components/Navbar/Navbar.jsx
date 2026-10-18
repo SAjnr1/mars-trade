@@ -32,7 +32,7 @@ const Navbar = () => {
           <li><NavLink to='/shop' className='program-link'>Shop</NavLink></li>
           <li><NavLink to='/custom_order' className='about-link'>Custom Order</NavLink></li>
           <li><NavLink to='/about_me' className='about-link'>About Me</NavLink></li>
-          <li><NavLink to='/contact' className='testimonial-link'>Contact</NavLink></li>
+        {/*  <li><NavLink to='/contact' className='testimonial-link'>Contact</NavLink></li> */}
         </ul>
       </nav>
 
@@ -69,12 +69,13 @@ const Navbar = () => {
             <span>About Me</span>
           </NavLink>
         </li>
-        <li>
+
+        {/* <li>
           <NavLink to='/contact' className='testimonial-link'>
             <Contact strokeWidth={2} />
             <span>Contact</span>
           </NavLink>
-        </li>
+        </li> */}
       </ul>
 
       

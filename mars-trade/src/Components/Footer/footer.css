@@ -26,6 +26,30 @@
     text-decoration: none;
     background-color: transparent;
     margin-top: auto;
+    flex-direction: column;
+}
+
+.copyrights{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-contact-details{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 1.5%;
+}
+
+.footer-contact-details img{
+    width: clamp(40px, 4vw, 100px);
+}
+
+.footer-contact-details a:hover{
+    transform: none;
 }
 
 .rights{
@@ -40,7 +64,7 @@
     margin-left: 20px;
 }
 
-.link:hover{
+.llink:hover{
     transform: none ;
     transition: none;
 }

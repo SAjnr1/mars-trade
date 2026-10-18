@@ -32,7 +32,7 @@ nav{
 }
 
 .logout-btn:hover{
-    color: white;
+    color: #c468bf;
     transform: none;
     box-shadow: none;
     transition: 0.3s ease;

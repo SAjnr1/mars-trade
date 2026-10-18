@@ -30,11 +30,11 @@ const Navbar = () => {
      {/* <nav className={`container ${sticky ? 'dark-nav' : ''}`}> */}
 
      <nav>
-        <Link to='/admin/homepage' className='home-link'>
+        <Link to='/admin/home' className='home-link'>
           <img src={logo} alt="" className='logo' />
         </Link>
         <ul className='desktop-nav-links'>
-          <li><NavLink to='/admin/homepage' end className='homepage-link'>Home</NavLink></li>
+          <li><NavLink to='/admin/home' end className='homepage-link'>Home</NavLink></li>
           <li><NavLink to='/admin/gallery' className='services-link'>Gallery</NavLink></li>
           <li><NavLink to='/admin/shop' className='program-link'>Shop</NavLink></li>
           <li><button type="button" onClick={logout}  className="logout-btn">Log Out</button></li>

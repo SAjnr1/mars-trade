@@ -61,7 +61,7 @@ const AdminShop = () => {
         <div className="product-btn">
           <p className="product-bttn" type='button'>Upload Product</p>
         </div>
-        vuiufuhvvvhvhjvjbvhh
+        
 
       </form>
 
