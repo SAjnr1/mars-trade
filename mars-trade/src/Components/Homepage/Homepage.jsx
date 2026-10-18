@@ -35,7 +35,8 @@ const Homepage = () => {
         <p>Shop Now</p>
         </div>
         </Link>
-      
+
+                 
 
       <Link to='/custom_order' className="card-link">
      <div className="btn" > 
